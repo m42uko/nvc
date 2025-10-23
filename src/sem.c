@@ -1942,7 +1942,7 @@ static bool sem_compare_interfaces(tree_t decl, tree_t body, int nth,
 
        // Work around mismatch introduced by folding
        const tree_kind_t brefkind = tree_kind(bref);
-       if (brefkind == T_CONST_DECL || brefkind == T_GENERIC_DECL)
+       if (brefkind == T_CONST_DECL || brefkind == T_GENERIC_DECL || brefkind == T_FUNC_BODY)
          return true;
 
        break;
